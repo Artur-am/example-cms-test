@@ -1,0 +1,67 @@
+.meta {
+    padding-left: 0px;
+    margin-top: 0px;
+
+    & > li {
+        display: inline-block;
+        width: auto;
+        height: 34px;
+        margin-right: 3px;
+        font-size: .8em;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        & > a {
+            text-decoration: none;
+            & > span {
+                color: #81728f;
+            }
+            & svg {
+                fill: #81728f;
+            }
+
+            &:hover {
+                & span {
+                    color: #b49aca;
+                }
+
+                & svg {
+                    fill: #b49aca;
+                }
+            }
+        }
+
+        & svg {
+            width: 16px;
+            height: 100%;
+            fill: #b49aca;
+            vertical-align: middle;
+        }
+
+        & span {
+            vertical-align: middle;
+            margin-left: 3px;
+            color: #685f6f;
+            text-shadow: 0 0 1px #e6cbfd;
+        }
+    }
+}
+
+.article {
+    
+    & .img {
+        display: block;
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    & .text {
+        letter-spacing: 1px;
+        font-size: 1.05em;
+        line-height: 22px;
+    }
+}

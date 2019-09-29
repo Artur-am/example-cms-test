@@ -1,0 +1,72 @@
+.pagination {
+    display: block;
+    width: 100%;
+    margin-bottom: 27px;
+    text-align: center;
+
+    & > a,
+    & > span {
+        display: inline-block;
+        color: #000;
+        font-size: 14px;
+        border-radius: 50%;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    & .first,
+    & .last {
+        font-weight: 800;
+        border: 1px solid #797f8b;
+        width: 31px;
+        line-height: 31px;
+        transition: color .3s ease,
+                    border-color .3s ease;
+        &:hover {
+            color: #6d7c97;
+            border-color: #3d4350;
+        }
+    }
+
+    & .arrow {
+        padding-left: 21px;
+        padding-right: 21px;
+        transition: color .3s ease;
+
+        & > .circle {
+            display: inline-block;
+            padding: 6px;
+            background-color: #6d7c97;
+            border-radius: 50%;
+            margin-left: 7px;
+            transition: background-color .3s ease;
+        }
+
+        &:hover {
+            color: #6d7c97;
+            & > .circle {
+                background-color: #000;
+            }
+        }
+    }
+
+    & .active {
+        background-color: #037af5;
+        color: #fff;
+        font-size: 21px;
+        font-weight: 900;
+        padding: 11px;
+        transition: color .3s ease;
+
+        & > input {
+            width: 26px;
+            text-align: center;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            display: block;
+            color: #fff;
+            font-size: 17px;
+        }
+    }
+}

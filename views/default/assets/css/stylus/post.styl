@@ -1,0 +1,23 @@
+.post {
+    width: 350px;
+    height: 91px;
+    vertical-align: top;
+    overflow: hidden;
+    display: inline-block;
+
+    & > a {
+        border-radius: 50%;
+        height: 100%;
+        & > img {
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+        }
+    }
+
+    & .description {
+        padding-left: 11px;
+        text-align: left;
+        box-sizing: border-box;
+    }
+}
