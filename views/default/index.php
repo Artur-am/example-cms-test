@@ -15,21 +15,6 @@
 
     <?php require_once 'template-parts/header.php'; ?>
 
-    <?php if(!empty($data->page['crumbs'])): ?>
-
-    <ul class="wrapper bread-crumbs">
-        <li>
-            <a href="<?= SITE_URL; ?>">
-                <svg class="icon">
-                    <use xlink:href="<?= THEME; ?>/assets/img/icons.svg#home"></use>
-                </svg><!--
-            --></a><!--
-        --></li>
-        <?//= $render->set($data->page['crumbs'], '<li><a href=":href">:title</a></li>'); ?>
-    </ul>
-
-    <?php endif; ?>
-
     <?php
         require_once DIR_THEME . $data->view();
     ?>
